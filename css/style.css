@@ -551,7 +551,7 @@ textarea {
     height: 100%;
     clip-path: circle(100px at 90% -20%);
     -webkit-clip-path: circle(100px at 90% -20%);
-    background-color: rgb(173, 173, 173);
+    background-color: rgb(145, 145, 145);
     z-index: 2;
     opacity: 0.9;
     transition: all 1s ease;
