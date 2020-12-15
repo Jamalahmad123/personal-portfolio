@@ -14,7 +14,8 @@
   --text-center: center;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --transition: all 0.3s linear;
+  --transition-1: all 0.3s linear;
+  --transition-2: all 0.2s ease-in-out;
 }
 
 /* General Styel */
@@ -315,7 +316,7 @@ a {
   background-color: var(--white-clr);
   text-align: center;
   border-radius: 1rem;
-  transition: var(--transition);
+  transition: var(--transition-2);
 }
 
 .services-grid .services-card:hover {
@@ -362,7 +363,7 @@ a {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   opacity: 0;
-  transition: all 0.3s linear;
+  transition: var(--transition-1);
 }
 
 .project-container .project-info h4,
@@ -477,10 +478,10 @@ textarea {
 
 .footer .social-icons i {
   transform: scale(0.8);
-  transition: all 0.3s linear;
   object-fit: cover;
   padding: 0.5rem;
   border-radius: 50rem;
+  transition: var(--transition-1);
 }
 
 .footer .social-icons i:hover {
