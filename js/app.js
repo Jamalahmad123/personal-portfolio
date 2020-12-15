@@ -4,7 +4,6 @@
 const navHeader = document.querySelector('.nav-header');
 const sidebarList = document.querySelector('.sidebar');
 const hambugerMenu = document.querySelector('.hamburger');
-const hamnurgerLine = document.querySelectorAll('.hamburger .line');
 
 // apply fixed nav to header
 window.addEventListener('scroll', function () {
