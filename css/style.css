@@ -14,6 +14,7 @@
   --text-center: center;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s linear;
 }
 
 /* General Styel */
@@ -105,7 +106,7 @@ a {
   border: none;
   outline: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 .btn-light {
