@@ -621,7 +621,7 @@ textarea {
 }
 
 /* dark-mode */
-.hero {
+/* .hero {
   position: relative;
 }
 .dark-mode-toggle {
@@ -640,4 +640,4 @@ textarea {
 .dark-mode-toggle:focus,
 .dark-mode-toggle:active {
   outline: none;
-}
+} */

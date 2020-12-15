@@ -32,3 +32,7 @@ sidebarList.addEventListener('click', function (event) {
     hambugerMenu.classList.remove('change-color');
   }
 });
+
+// get year dynamically
+const date = document.querySelector('.year');
+date.innerHTML = new Date().getFullYear();
