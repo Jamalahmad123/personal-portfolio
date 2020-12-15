@@ -561,6 +561,10 @@ textarea {
     clip-path: circle(1600px at 90% -10%);
     -webkit-clip-path: circle(1600px at 90% -10%);
   }
+
+  .sidebar .side-list li a {
+    color: var(--white-clr);
+  }
   /* end mobile navbar */
 
   /* hero section */
