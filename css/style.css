@@ -15,7 +15,7 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --transition-1: all 0.3s linear;
-  --transition-2: all 0.2s ease-in-out;
+  --transition-2: all 0.2s ease;
 }
 
 /* General Styel */
@@ -149,6 +149,54 @@ a {
   color: var(--light-blue-clr);
 }
 
+/*********** nav and sidebar menu link style **************/
+.list-item li a,
+.side-list li a {
+  position: relative;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  overflow: hidden;
+  color: var(--tertiary-clr);
+}
+
+li a::before {
+  position: absolute;
+  content: attr(data-content);
+  color: var(--light-blue-clr);
+  text-decoration: underline;
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 275ms ease;
+}
+
+li a:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/***************** end ***********************/
+
+/**************** Social links style ******************/
+.footer .social-icons a,
+.sidebar .social-icons a {
+  margin-right: 1.5rem;
+  color: var(--white-clr);
+}
+
+.social-icons i {
+  transform: scale(0.8);
+  object-fit: cover;
+  padding: 0.5rem;
+  border-radius: 50rem;
+  transition: var(--transition-1);
+}
+
+.social-icons i:hover {
+  transform: scale(0.9);
+  color: var(--light-blue-clr);
+  background-color: var(--white-clr);
+}
+/**************** End Social links style ******************/
+
 /* button style end */
 
 .py-1 {
@@ -202,29 +250,6 @@ a {
   align-items: center;
   flex: 1 1 40rem;
 }
-
-.nav .list-item li a {
-  position: relative;
-  display: inline-block;
-  font-size: 1.8rem;
-  font-weight: 600;
-  overflow: hidden;
-  color: var(--tertiary-clr);
-}
-
-.nav .list-item li a::before {
-  position: absolute;
-  content: attr(data-content);
-  color: var(--light-blue-clr);
-  text-decoration: underline;
-  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-  transition: clip-path 275ms ease;
-}
-
-.nav .list-item li a:hover::before {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
 /* fixed Navbar */
 .fixed-nav {
   position: fixed;
@@ -470,25 +495,6 @@ textarea {
   color: var(--white-clr);
   padding: 1.5rem;
 }
-
-.footer .social-icons a {
-  margin-right: 1.5rem;
-  color: var(--white-clr);
-}
-
-.footer .social-icons i {
-  transform: scale(0.8);
-  object-fit: cover;
-  padding: 0.5rem;
-  border-radius: 50rem;
-  transition: var(--transition-1);
-}
-
-.footer .social-icons i:hover {
-  transform: scale(0.9);
-  color: var(--light-blue-clr);
-  background-color: var(--white-clr);
-}
 /* footer end */
 
 /********************** media query *******************/
@@ -554,50 +560,6 @@ textarea {
   .show-links {
     clip-path: circle(1600px at 90% -10%);
     -webkit-clip-path: circle(1600px at 90% -10%);
-  }
-
-  .sidebar .side-list li a {
-    position: relative;
-    display: inline-block;
-    font-size: 1.8rem;
-    font-weight: 600;
-    overflow: hidden;
-    color: var(--white-clr);
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  .sidebar .side-list li a::before {
-    position: absolute;
-    content: attr(data-content);
-    color: var(--light-blue-clr);
-    text-decoration: underline;
-    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-    transition: clip-path 275ms ease;
-  }
-
-  .sidebar .side-list li a:hover::before {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  .sidebar .social-icons a {
-    text-align: center;
-    margin-right: 1.5rem;
-    color: var(--white-clr);
-  }
-
-  .sidebar .social-icons i {
-    transform: scale(0.8);
-    transition: all 0.3s linear;
-    object-fit: cover;
-    padding: 0.5rem;
-    border-radius: 50rem;
-  }
-
-  .sidebar .social-icons i:hover {
-    transform: scale(0.9);
-    color: var(--light-blue-clr);
-    background-color: var(--white-clr);
   }
   /* end mobile navbar */
 
