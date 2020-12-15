@@ -233,7 +233,7 @@ a {
   z-index: 2;
   background-color: var(--white-clr);
   box-shadow: var(--light-shadow);
-  transition: box-shadow 0.3s linear;
+  transition: var(--transition);
 }
 
 /* sidebar-nav */
