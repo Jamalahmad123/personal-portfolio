@@ -372,11 +372,6 @@ li a:hover::before {
   box-shadow: var(--dark-shadow);
 }
 
-/* .project-container > img {
-  width: 400px;
-  height: fit-content;
-} */
-
 .project-container .project-info {
   display: flex;
   justify-content: space-between;
@@ -509,6 +504,15 @@ textarea {
 /* footer end */
 
 /********************** media query *******************/
+@media only screen and (max-width: 900px) {
+  .work .work-grid {
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-rows: auto;
+    gap: 3rem;
+    margin-top: 3.5rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   /* Mobile navbar */
   .nav .list-item {
@@ -627,25 +631,3 @@ textarea {
     transform: rotate(0deg);
   }
 }
-
-/* dark-mode */
-/* .hero {
-  position: relative;
-}
-.dark-mode-toggle {
-  width: 6rem;
-  height: 4rem;
-  border: none;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  right: 2rem;
-  z-index: 100;
-  color: #00332a;
-  cursor: pointer;
-}
-
-.dark-mode-toggle:focus,
-.dark-mode-toggle:active {
-  outline: none;
-} */
