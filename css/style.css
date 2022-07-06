@@ -360,7 +360,7 @@ li a:hover::before {
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   /* grid-template-columns: repeat(3, 1fr); */
   grid-template-rows: auto;
-  gap: 2rem;
+  gap: 3rem;
   margin-top: 3.5rem;
 }
 
