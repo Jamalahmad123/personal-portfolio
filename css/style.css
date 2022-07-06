@@ -504,7 +504,7 @@ textarea {
 /* footer end */
 
 /********************** media query *******************/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .work .work-grid {
     grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     grid-template-rows: auto;
