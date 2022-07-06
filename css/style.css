@@ -177,15 +177,12 @@ li a:hover::before {
 }
 
 .social-icons i {
-  transform: scale(0.8);
-  object-fit: cover;
   padding: 0.5rem;
-  border-radius: 50rem;
+  border-radius: 50%;
   transition: var(--transition-1);
 }
 
 .social-icons i:hover {
-  transform: scale(0.9);
   color: var(--light-blue-clr);
   background-color: var(--white-clr);
 }
